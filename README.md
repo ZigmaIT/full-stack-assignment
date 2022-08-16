@@ -1,13 +1,29 @@
 
-## Full Stack Developer Assignment
+Netlify - https://62fbffad5c203800096512bf--2002photopedia.netlify.app/
 
-This repository was created to publish assignments as part of interview process for full stack developer role in **[Zigma](https://zigma.in/)**.
+Linkedin - https://www.linkedin.com/in/jatin-pandey-18194b1a0/
 
-In order to submit your assignments - 
+Internshalla - https://internshala.com/student/dashboard (not getting my profile link)
+Name on internshalla - Jatin Pandey
+Email ID on internshalla - jatin26pandey@gmail.com
 
-1. Create your project/repo by forking the base repo from this URL - https://github.com/ZigmaIT/full-stack-assignment and start the work. 
-2. Create a README.md file in the repository that contains the following information - 
-    1. The Netlify deployment link to the application.
-    2. A link to your LinkedIn/Internshala profile or to a PDF file containing your CV.
-    3. Description of your assignment.
+Resume -> https://drive.google.com/file/d/1PmfGgmjpE8IRvGUF57UNamT95dVHtbBn/view?usp=sharing
+
+//////////////////////////////////// Description ////////////////////////////////////////////////////////////////////////
+
+Photopedia App
+
+Build with React.js and Deployed on netlify
+
+for various components , i used react - components 
+
+for linking react-router-dom is used 
+
+for infinite scrolling feature - react-infinite-scroll-component is used.
+
+API used - unsplash API
+
+for API request -> AXIOS (a promised-based HTTP client for JavaScript) is used.
+
+various react tools like useState , useEffect also used .
 

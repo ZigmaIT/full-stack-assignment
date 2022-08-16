@@ -1,0 +1,56 @@
+#imageContainer {
+    height: 40vh;
+    width: 30vh;
+    background-position: center;
+    background-size: cover;
+    margin: 0.5rem;
+    transition: 0.3s;
+    z-index: 0;
+    background-blend-mode: color;
+  }
+  
+  #imageContainer:hover {
+    transform: translateY(-0.3rem) scale(1.05);
+    background-color: rgba(24, 20, 20, 0.479);
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 876px) {
+    #header div button {
+      font-size: 3rem;
+    }
+  
+    #navBar * {
+      font-size: 1rem;
+    }
+  
+    #navBar {
+      display: flex;
+    }
+  
+    #taglineBox {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #navBar {
+      margin-top: 0;
+      flex-direction: column;
+      height: 30vh;
+    }
+  
+    #iconWrapper {
+      width: 35vh;
+      font-size: 1.5rem;
+    }
+  
+    #dropDownBtn {
+      display: block;
+    }
+  
+    #taglineBox {
+      font-size: 2rem;
+    }
+  }
+  

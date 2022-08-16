@@ -1,0 +1,63 @@
+#navBar {
+    height: 8vh;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    transition: 0.5s ease-in-out;
+  }
+  
+  #navBar * {
+    text-decoration: none;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+  }
+  
+  #navBar *:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    color: rgb(34, 158, 158);
+  }
+
+  @media screen and (max-width: 876px) {
+    #header div button {
+      font-size: 3rem;
+    }
+  
+    #navBar * {
+      font-size: 1rem;
+    }
+  
+    #navBar {
+      display: flex;
+    }
+  
+    #taglineBox {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #navBar {
+      margin-top: 0;
+      flex-direction: column;
+      height: 30vh;
+    }
+  
+    #iconWrapper {
+      width: 35vh;
+      font-size: 1.5rem;
+    }
+  
+    #dropDownBtn {
+      display: block;
+    }
+  
+    #taglineBox {
+      font-size: 2rem;
+    }
+  }
+  

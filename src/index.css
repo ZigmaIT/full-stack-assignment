@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+#imagesBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+footer {
+  height: 15vh;
+  background-color: black;
+  float: inline-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#iconWrapper {
+  height: 5vh;
+  width: 30vw;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#iconWrapper * {
+  cursor: pointer;
+}
+
+#iconWrapper *:hover {
+  color: rgb(130, 243, 243);
+}
+
+#gotoTop {
+  height: 3rem;
+  width: 3rem;
+  position: fixed;
+  top: 80vh;
+  right: 5vw;
+  font-size: 2rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#gotoTop:hover {
+  background-color: rgb(130, 243, 243);
+  color: white;
+}
+
+@media screen and (max-width: 876px) {
+  #header div button {
+    font-size: 3rem;
+  }
+
+  #navBar * {
+    font-size: 1rem;
+  }
+
+  #navBar {
+    display: flex;
+  }
+
+  #taglineBox {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #navBar {
+    margin-top: 0;
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  #iconWrapper {
+    width: 35vh;
+    font-size: 1.5rem;
+  }
+
+  #dropDownBtn {
+    display: block;
+  }
+
+  #taglineBox {
+    font-size: 2rem;
+  }
+}
