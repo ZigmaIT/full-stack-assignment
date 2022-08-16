@@ -11,8 +11,8 @@ import ImageCard from "./components/imageCard";
 import Loader from "./components/loader";
 import Tagline from "./components/tagLine";
 
-//jsfiles and icons
-
+//jsfiles , CSS files and icons
+import './CSS/navbar.css'
 import { BsFillShiftFill } from "react-icons/bs";
 
 

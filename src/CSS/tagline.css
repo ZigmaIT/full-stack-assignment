@@ -1,0 +1,50 @@
+#taglineBox {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 5rem;
+  }
+  
+  #taglineBox span {
+    color: rgb(34, 158, 158);
+  }
+
+  @media screen and (max-width: 876px) {
+    #header div button {
+      font-size: 3rem;
+    }
+  
+    #navBar * {
+      font-size: 1rem;
+    }
+  
+    #navBar {
+      display: flex;
+    }
+  
+    #taglineBox {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #navBar {
+      margin-top: 0;
+      flex-direction: column;
+      height: 30vh;
+    }
+  
+    #iconWrapper {
+      width: 35vh;
+      font-size: 1.5rem;
+    }
+  
+    #dropDownBtn {
+      display: block;
+    }
+  
+    #taglineBox {
+      font-size: 2rem;
+    }
+  }
+  

@@ -1,0 +1,73 @@
+#loaderDotContainer {
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #loaderDotContainer div {
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  #loaderDotContainer :nth-child(1) {
+    animation: jump-up 0.6s 0.1s linear infinite;
+  }
+  
+  #loaderDotContainer :nth-child(2) {
+    animation: jump-up 0.6s 0.2s linear infinite;
+  }
+  
+  #loaderDotContainer :nth-child(3) {
+    animation: jump-up 0.6s 0.3s linear infinite;
+  }
+  
+  @keyframes jump-up {
+    50% {
+      transform: translateY(1rem);
+    }
+  }
+  
+
+  @media screen and (max-width: 876px) {
+    #header div button {
+      font-size: 3rem;
+    }
+  
+    #navBar * {
+      font-size: 1rem;
+    }
+  
+    #navBar {
+      display: flex;
+    }
+  
+    #taglineBox {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    #navBar {
+      margin-top: 0;
+      flex-direction: column;
+      height: 30vh;
+    }
+  
+    #iconWrapper {
+      width: 35vh;
+      font-size: 1.5rem;
+    }
+  
+    #dropDownBtn {
+      display: block;
+    }
+  
+    #taglineBox {
+      font-size: 2rem;
+    }
+  }
+  

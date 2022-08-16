@@ -1,4 +1,6 @@
 import React from 'react'
+import '../CSS/imageCard.css'
+import '../index.css'
 
 const ImageCard = ({imageUrl}) => {
   return (
