@@ -1,17 +1,18 @@
 import axios from "axios";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Link } from "react-router-dom";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 //components
 
 import Footer from "./components/footer";
 import Header from "./components/header";
 import ImageCard from "./components/imageCard";
-import InfiniteScroll from "react-infinite-scroll-component";
 import Loader from "./components/loader";
 import Tagline from "./components/tagLine";
+
 //jsfiles and icons
-import "./dropdown.js";
+
 import { BsFillShiftFill } from "react-icons/bs";
 
 
