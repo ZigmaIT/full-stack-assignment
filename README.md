@@ -1,5 +1,5 @@
 
-Netlify - https://main--26photopedia.netlify.app/
+Netlify - https://62fbffad5c203800096512bf--2002photopedia.netlify.app/
 
 Linkedin - https://www.linkedin.com/in/jatin-pandey-18194b1a0/
 
