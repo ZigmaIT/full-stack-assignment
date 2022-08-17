@@ -1,13 +1,14 @@
 
-## Full Stack Developer Assignment
+## Deployed on Link
+https://riddlelazyloading1.netlify.app/
 
-This repository was created to publish assignments as part of interview process for full stack developer role in **[Zigma](https://zigma.in/)**.
+## Contains the link to my LinkedIn Profile
+https://www.linkedin.com/in/krish-p-bb1131218/
 
-In order to submit your assignments - 
+## Description
+This is an attempt to make a look-alike website of https://preview.colorlib.com/theme/riddle/ . This is made mainly using the images from the Unsplash API - https://unsplash.com/documentation . 
 
-1. Create your project/repo by forking the base repo from this URL - https://github.com/ZigmaIT/full-stack-assignment and start the work. 
-2. Create a README.md file in the repository that contains the following information - 
-    1. The Netlify deployment link to the application.
-    2. A link to your LinkedIn/Internshala profile or to a PDF file containing your CV.
-    3. Description of your assignment.
+There are different Sections in the Website that fetch a particular type of image depending on the category. The Other pages like about, work and contact are not much involved.
+
+Mainly the Website is fetching the random images based on the Category given in the tabs. It also has an lazy-loading feature (infinte-scrolling) like many social media apps. Pls check out the deployement link to explore more about this project
 
