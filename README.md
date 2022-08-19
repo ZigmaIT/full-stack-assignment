@@ -1,13 +1,18 @@
+# Description
+This project is based on Unsplash api to fetch images.
+The project UI is based on the theme from 'https://preview.colorlib.com/theme/riddle/'
+ReactJS is used for the Frontend of the project.
+A user could click on navigation of different topics to fetch all the images of that topic.
 
-## Full Stack Developer Assignment
+# Netlify
+https://super-gumption-d4d154.netlify.app/
 
-This repository was created to publish assignments as part of interview process for full stack developer role in **[Zigma](https://zigma.in/)**.
+# LinkedIn
+https://www.linkedin.com/in/bhoomaahamso-dharamalayenam-041b291a5/
 
-In order to submit your assignments - 
+# CV
+https://drive.google.com/file/d/1vA4-E7CAR8PXjNcAZ6aFLbwabhK3PenA/view?usp=sharing
 
-1. Create your project/repo by forking the base repo from this URL - https://github.com/ZigmaIT/full-stack-assignment and start the work. 
-2. Create a README.md file in the repository that contains the following information - 
-    1. The Netlify deployment link to the application.
-    2. A link to your LinkedIn/Internshala profile or to a PDF file containing your CV.
-    3. Description of your assignment.
-
+# Points to Keep in mind
+The Unsplash API only allows 50 requests per hour so the infinte scroll will stop working after 50 requests.
+It takes couple of seconds to update the pictures after changing the topic(tab/button)
