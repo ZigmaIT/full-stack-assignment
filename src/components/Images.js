@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import '../styles/images.css';
 
 const Img = styled.img`
     width: 100%;
@@ -10,7 +11,7 @@ const Img = styled.img`
 const Images = ({data}) => {
     return (
         <div>
-            <Img src={data} alt='random-img'/>
+            <Img className="category-img" src={data} alt='category-img'/>
         </div>
     );
 };

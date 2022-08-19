@@ -31,8 +31,10 @@ const Category = styled.div`
     justify-content: center;
     align-items: center;
     & > a {
-        padding: 10px;
+        padding: 15px;
         text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
         color: #000;
     }
 `
@@ -49,7 +51,6 @@ const Home = () => {
 
         await axios.get(`${rootApi}/search/photos?page=${page}&query=${collection}&client_id=${accessKey}`)
         .then(res => setImages([ ...images, ...res?.data?.results]))
-        // .then(res => console.log(res.data.results))
         .catch((error) => console.log(error))
         changePage(page + 1);
     };
