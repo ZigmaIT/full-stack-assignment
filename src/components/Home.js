@@ -5,6 +5,7 @@ import Images from './Images';
 import styled, { createGlobalStyle } from 'styled-components';
 import axios from 'axios';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { Link } from 'react-router-dom';
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -23,28 +24,83 @@ const ImageWrapper = styled.section`
     display: grid;
     grid-gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
+`;
+const Category = styled.div`
+    display: flex;
+    padding: 20px 100px;
+    justify-content: center;
+    align-items: center;
+    & > a {
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+    }
 `
 
 const Home = () => {
     const [ images, setImages ] = useState([]);
+    const [collection, setCollection] = useState("all");
+    const [ page, changePage ] = useState(1);
 
-    useEffect(() => {
-        fetchImages()
-    }, []);
-
-
-    const fetchImages = () =>{
+    
+    const fetchImages = async() =>{
         const rootApi = `https://api.unsplash.com`;
         const accessKey = process.env.REACT_APP_ACCESSKEY;
 
-        axios.get(`${rootApi}/photos/random?client_id=${accessKey}&count=20`)
-        .then(res => setImages([ ...images, ...res.data]))
-    }
+        await axios.get(`${rootApi}/search/photos?page=${page}&query=${collection}&client_id=${accessKey}`)
+        .then(res => setImages([ ...images, ...res?.data?.results]))
+        // .then(res => console.log(res.data.results))
+        .catch((error) => console.log(error))
+        changePage(page + 1);
+    };
+
+    useEffect(() => {
+        fetchImages(collection)
+        changePage(1);
+    }, [collection]);
     
     return (
         <section>
             <Header/>
             <GlobalStyle/>
+            <Category>
+                <Link
+                    to="/all"
+                    onClick={() => {
+                    if (collection === "all") return;
+                    setCollection("all");
+                    setImages([]);
+                }}>
+                    All
+                </Link>
+                <Link
+                    to="/webdesign"
+                    onClick={() => {
+                    if (collection === "webdesign") return;
+                    setCollection("webdesign");
+                    setImages([]);
+                }}>
+                    Web Design
+                </Link>
+                <Link
+                    to="/graphics"
+                    onClick={() => {
+                    if (collection === "graphics") return;
+                    setCollection("graphics");
+                    setImages([]);
+                }}>
+                    Graphics
+                </Link>
+                <Link
+                    to="/3d"
+                    onClick={() => {
+                    if (collection === "3d") return;
+                    setCollection("3d");
+                    setImages([]);
+                }}>
+                    3D Design
+                </Link>
+            </Category>
             <InfiniteScroll
                 dataLength={images.length}
                 next={fetchImages}
