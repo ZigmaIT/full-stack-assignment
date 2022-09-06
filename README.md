@@ -2,9 +2,6 @@
 ## Deployed on Link
 https://riddlelazyloading1.netlify.app/
 
-## Contains the link to my LinkedIn Profile
-https://www.linkedin.com/in/krish-p-bb1131218/
-
 ## Description
 This is an attempt to make a look-alike website of https://preview.colorlib.com/theme/riddle/ . This is made mainly using the images from the Unsplash API - https://unsplash.com/documentation . 
 
